@@ -1,4 +1,4 @@
-\ IO Base 
+\ Board setup
 
 -DHBoard
 marker -DHBoard
@@ -11,6 +11,7 @@ PORTC 5 defPIN: BUTTON3
 PORTC 0 defPIN: BUTTON4
 PORTB 3 defPIN: BUZZER
 
+
 : init.ports ( --)
     LED output
     BUTTON1 input
@@ -20,6 +21,8 @@ PORTB 3 defPIN: BUZZER
     BUTTON3 high    \ pu
     BUTTON4 input
     BUTTON4 high    \ pu
+    BUZZER output
+    BUZZER low      \ make sure turned off
   ;
 
 : test_buttons ( -- )
