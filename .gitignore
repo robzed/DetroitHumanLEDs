@@ -1,0 +1,12 @@
+# Editor specific files
+*.swp
+*~
+*.bak
+
+
+# OS specific files
+.DS_STORE
+
+# Project specific settings
+.settings/
+
